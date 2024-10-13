@@ -47,4 +47,4 @@ Route::get('/deletePost/{postId}',[userController::class,'deletePost'])->name('p
 
 
 //search
-Route::get('/search',[userController::class,'searches'])->name('searches');
+Route::post('/search',[userController::class,'searches'])->name('searches');

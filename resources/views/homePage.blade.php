@@ -46,7 +46,8 @@
         @endif
        <!-- LOGININDICATOR -->
     
-                <form   action="route{{'searches'}}" method="get" class="d-flex" role="search">
+                <form   action="{{route('searches')}}" method="post" class="d-flex" role="search">
+                    @csrf
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                   </form>
@@ -99,7 +100,7 @@
       <br>
 
 
-      <h2 style="margin-left:20px;">Luxury Clothes</h2>
+      <h2 style="margin-left:20px;">Blogs</h2>
 <div class="scrollable" style="display:flex; margin-left:40px;  margin-right:40px;overflow-x:auto;scrollbar-width:none">
 <div class="card" style="min-width:300px;margin:5px; border:none;">
   <img class="card-img-top" src="../Images/itemsimages/clothes/child.jpg" class="d-block w-100" alt="Card image cap" style=" min-width:300px;min-height:300px;max-width:300px;max-height:300px">
@@ -107,7 +108,7 @@
   <div class="container1" style="display:flex;justify-content:center;">
   <h5 class="card-title" >Card title</h5> </div>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary"style="margin-left:80px;">Add to Cart</a>
+    <a href="#" class="btn btn-primary"style="margin-left:80px;">View</a>
   </div>
 </div>
 <div class="card" style="min-width:300px;margin:5px;border:none;">
@@ -116,7 +117,7 @@
     <div class="container1" style="display:flex;justify-content:center;">
     <h5 class="card-title" >Card title</h5> </div>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary"style="margin-left:80px;">Add to Cart</a>
+    <a href="#" class="btn btn-primary"style="margin-left:80px;">View</a>
   </div>
 </div>
 <div class="card" style="min-width:300px;margin:5px;border:none;">
@@ -125,7 +126,7 @@
   <div class="container1" style="display:flex;justify-content:center;">
   <h5 class="card-title" >Card title</h5> </div>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary"style="margin-left:80px;">Add to Cart</a>
+    <a href="#" class="btn btn-primary"style="margin-left:80px;">View</a>
   </div>
 </div>
 <div class="card" style="min-width:300px;margin:5px;border:none;">
@@ -134,7 +135,7 @@
   <div class="container1" style="display:flex;justify-content:center;">
   <h5 class="card-title" >Card title</h5> </div>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary"style="margin-left:80px;">Add to Cart</a>
+    <a href="#" class="btn btn-primary"style="margin-left:80px;">View</a>
   </div>
 </div>
 <div class="card" style="min-width:300px;margin:5px;border:none;">
@@ -143,7 +144,7 @@
   <div class="container1" style="display:flex;justify-content:center;">
   <h5 class="card-title" >Card title</h5> </div>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary"style="margin-left:80px;">Add to Cart</a>
+    <a href="#" class="btn btn-primary"style="margin-left:80px;">View</a>
   </div>
 </div>
 <div class="card" style="min-width:300px;margin:5px;border:none;">
@@ -152,7 +153,7 @@
   <div class="container1" style="display:flex;justify-content:center;">
   <h5 class="card-title" >Card title</h5> </div>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary"style="margin-left:80px;">Add to Cart</a>
+    <a href="#" class="btn btn-primary"style="margin-left:80px;">View</a>
   </div>
 </div>
 <a class="scroll-carousel_carouselControl__Id0y9 scroll-carousel_carouselHorizontalControl__1gDln scroll-carousel_feedRight__3tG5G" data-id="carouselControlFeedNext"></a>

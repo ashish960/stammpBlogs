@@ -150,12 +150,15 @@ public function deletePost($postId){
 //search function
     
 public function searches(Request $request){    
+
     $search = $request['search'] ?? "";     
     if ($search != ""){      
         $blogs =Blogs::where('blog_category','lIKE',"%$search%")->get();  
         
     }
-   
+   else{
+    $blogs=Blog::all();
+   }
    
   $blog=compact('blogs','search');
   return view('homePage')->with($blog);
